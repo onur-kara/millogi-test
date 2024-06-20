@@ -1,4 +1,4 @@
-#Onur's MiLoGi Tracker
+# Onur's MiLoGi Tracker
 
 I'm just trying to learn how mongodb works with streamlit.
 
