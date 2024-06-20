@@ -13,6 +13,7 @@ def init_connection():
 
 client = init_connection()
 
+
 # Pull data from the collection.
 # Uses st.cache_data to only rerun when the query changes or after 10 min.
 @st.cache_data(ttl=600)
@@ -21,3 +22,7 @@ def get_data():
     items = db.mycollection.find()
     items = list(items)  # make hashable for st.cache_data
     return items
+
+
+st.title("Onur's MiLoGi Tracker")
+
