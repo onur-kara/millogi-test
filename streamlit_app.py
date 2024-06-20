@@ -30,4 +30,9 @@ data = get_data()
 df = pd.DataFrame(data)
 
 st.title("Onur's MiLoGi Tracker")
+st.markdown("This is a simple application that connects a MongoDB Atlas database to a Streamlit frontend.  \n")
+st.markdown("Data is uploaded to MongoDB using a straightforward script. The basic functionality requires the following:  \n",
+             "- Automatically generate JSON data using generative AI and upload the results.  \n",
+             "- Regularly export Inoreader content into generative AI, search for relevant entries, and generate JSON data.  \n",
+             "- Implement various UI improvements.")
 st.write(df)
