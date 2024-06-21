@@ -34,5 +34,7 @@ st.markdown("This is a simple application that connects a MongoDB Atlas database
 st.markdown("Data is uploaded to MongoDB using a straightforward script. The basic functionality requires the following:  \n"
              "- Automatically generate JSON data using generative AI and upload the results.  \n"
              "- Regularly export Inoreader content into generative AI, search for relevant entries, and generate JSON data.  \n"
-             "- Implement various UI improvements.")
+             "- Implement various UI improvements."
+             "- Add the following columns: contract_value, units_required, timestamp"
+             "- Find a way to update items instead of adding new rows.")
 st.write(df)
