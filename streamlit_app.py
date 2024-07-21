@@ -37,4 +37,20 @@ st.markdown("Data is uploaded to MongoDB using a straightforward script. The bas
              "- Implement various UI improvements.  \n"
              "- Add the following columns: contract_value, units_required, timestamp.  \n"
              "- Find a way to update items instead of adding new rows.  \n")
+
 st.write(df)
+
+# Extracting the required values
+item = data['items'][0]
+id = item['id']
+item_title = item['title']
+item_published = item['published']
+origin_title = item['origin']['title']
+summary_content = item['summary']['content']
+
+# Displaying the values using st.write
+st.write("ID:", id)
+st.write("Item Title:", item_title)
+st.write("Item Published:", item_published)
+st.write("Origin Title:", origin_title)
+st.write("Summary Content:", summary_content)
