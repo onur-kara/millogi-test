@@ -40,5 +40,6 @@ st.markdown("Data is uploaded to MongoDB using a straightforward script. The bas
 
 st.write(df)
 
-st.write(df['_id'])
-
+st.write(df["items"[0]["title"]])
+st.write(df["items"[0]["summary"]["content"]])
+st.write(df["items"[0]["published"]])
