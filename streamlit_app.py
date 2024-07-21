@@ -38,8 +38,5 @@ st.markdown("Data is uploaded to MongoDB using a straightforward script. The bas
              "- Add the following columns: contract_value, units_required, timestamp.  \n"
              "- Find a way to update items instead of adding new rows.  \n")
 
-st.write(df)
 
 st.write(df["items"[0]["title"]])
-st.write(df["items"[0]["summary"]["content"]])
-st.write(df["items"[0]["published"]])
