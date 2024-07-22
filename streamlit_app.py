@@ -29,14 +29,12 @@ data = get_data()
 # Convert the data to a DataFrame
 df = pd.DataFrame(data)
 
-st.title("Onur's MiLoGi Tracker")
+st.title("Onur's Aircraft News Tracker")
 st.markdown("This is a simple application that connects a MongoDB Atlas database to a Streamlit frontend.  \n")
-st.markdown("Data is uploaded to MongoDB using a straightforward script. The basic functionality requires the following:  \n"
-             "- Automatically generate JSON data using generative AI and upload the results.  \n"
-             "- Regularly export Inoreader content into generative AI, search for relevant entries, and generate JSON data.  \n"
-             "- Implement various UI improvements.  \n"
-             "- Add the following columns: contract_value, units_required, timestamp.  \n"
-             "- Find a way to update items instead of adding new rows.  \n")
+
+st.markdown("TODO list:  \n"
+             "- Data validation: see whether all triggers detected by Inoreader is being added.  \n"
+             "- Remove all HTML formattting from title and details, automatically translate the column into English.  \n")
 
 st.write(df)
 
